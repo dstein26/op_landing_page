@@ -1,0 +1,182 @@
+body{
+    height:100vh;
+    display:flex;
+    padding:0;
+    margin:0;
+    flex-direction:column;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    height:75px;
+    padding-left: 32px;
+    padding-right:32px;
+}
+
+.header ul{
+    list-style: none;
+    display:flex;
+    padding:0;
+}
+
+.header li{
+    margin:16px;
+}
+
+.main-content{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.content{
+    flex:1;
+    display:flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: center;
+    justify-content:space-evenly;
+    gap:64px;
+}
+
+.subcontent{
+    display: flex;
+    flex:1;
+    height:100%;
+    justify-content:flex-start;
+}
+
+.subcontent h2,p{
+    margin:0;
+}
+
+.subcontent p{
+    flex:1;
+}
+
+.subcontent.img{
+    flex:1;
+    align-content:center;
+    justify-content:center;
+}
+
+.cardview{
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    margin:16px;
+}
+
+.card .img{
+    height:75px;
+    width:75px;
+    border:#3882F6 solid;
+    border-radius:6px;
+}
+
+.quote{
+    width:400px;
+}
+
+.quote p{
+    font-style:italic;
+    margin:0;
+}
+
+.quote h2{
+    padding:0;
+    margin:0;
+    font-style:normal;
+    text-align: right;
+    font-size:16px;
+}
+
+.call{
+    flex:1;
+    background-color:#3882F6;
+    padding: 32px;
+    border-radius: 5px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:white;
+}
+
+.call .text{
+    flex:1;
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+
+.call h2,p{
+    margin:0;
+}
+
+.footer{
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.dark{
+    color:white;
+    background-color:#1f2937;
+}
+
+.light{
+    color:black;
+    background-color:white;
+}
+
+.gray{
+    color:black;
+    background-color:#E5E7EB;
+}
+
+.col{
+    flex-direction: column;
+    gap:0;
+}
+
+.subtext{
+    font-size:18px;
+}
+
+.dark .subtext{
+    color:#E5E7EB;
+}
+
+button{
+    background-color:#3882F6;
+    color:white;
+    font-weight:bold;
+    border-radius: 5px;
+    padding:5px 16px 5px 16px;
+    margin: 16px 0 16px 0;
+    border:none;
+    align-self: flex-start;
+}
+
+.call button{
+    border:2px white solid;
+}
