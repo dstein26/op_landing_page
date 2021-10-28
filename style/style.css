@@ -1,15 +1,15 @@
 :root{
     /* Color theme variables */
-    --dark-bg-color: #1f2937;
-    --dark-fg-color: white;
+    --dark-bg-color: rgb(228, 167, 37);
+    --dark-fg-color: black;
     --dark-st-color: #E5E7EB;
-    --light-bg-color: white;
+    --light-bg-color: beige;
     --light-fg-color: #1f2937;
-    --gray-bg-color: #E5E7EB;
+    --gray-bg-color: rgb(194, 194, 138);
     --gray-fg-color: black;
-    --highlight-bg-color: #3882F6;
+    --highlight-bg-color: #e9782c;
     --highlight-fg-color: white;
-    --highlight-dark-color: #285aaa;
+    --highlight-dark-color: #8f491a;
 }
 
 body{
@@ -70,7 +70,7 @@ body{
     height:100%;
     justify-content:center;
     color:inherit;
-    background-color:inherit;
+    background-color:transparent;
 }
 
 .subcontent,.content h2,p{
@@ -103,7 +103,13 @@ body{
     flex:1 1 0;
     flex-grow:100%;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
+}
+
+.cardview.border{
+    border:var(--highlight-dark-color) solid;
+    border-radius:6px;
+    margin:0 16px 0 16px;
 }
 
 .card{
@@ -112,13 +118,21 @@ body{
     align-items:center;
     justify-content:center;
     margin:8px 16px 8px 16px;
+    width:250px;
 }
 
 .card .img{
     height:75px;
     width:75px;
-    border:#3882F6 solid;
+    border:var(--highlight-dark-color) solid;
     border-radius:6px;
+}
+
+.card .subtext{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .quote{
@@ -176,6 +190,19 @@ body{
 .theme-gray{
     color:var(--gray-fg-color);
     background-color: var(--gray-bg-color);
+}
+
+.theme-highlight{
+    color:var(--highlight-fg-color);
+    background-color:var(--highlight-bg-color);
+}
+
+.theme-light.fade{
+    background-color:var(--light-bg-color);
+    background-image:
+        linear-gradient(var(--light-bg-color),
+                        var(--light-bg-color) 90%,
+                        var(--dark-bg-color));
 }
 
 .col{
