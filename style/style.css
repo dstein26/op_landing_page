@@ -22,6 +22,14 @@ body{
     font-size:18px;
 }
 
+/* Default table style */
+table{
+    width: 100%;
+}
+table, th, td {
+    border:1px solid black;
+}
+
 /*
     Header Styles
 */
@@ -100,6 +108,12 @@ body{
     padding:8px;
 }
 
+.subcontent img{
+    height:inherit;
+    width:inherit;
+    object-fit:contain; 
+}
+
 /*
     Cardview will contain various "Cards", which have an image
     and a short text centered underthem.
@@ -127,6 +141,12 @@ body{
     justify-content:center;
     margin:8px 16px 8px 16px;
     width:250px;
+}
+
+.card img{
+    height: inherit;
+    width: inherit;
+    object-fit: stretch;
 }
 
 .card .img{
